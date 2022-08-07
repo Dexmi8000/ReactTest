@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #595959;
+}
+ul, li{
+  list-style: none;
+}
+
+
+
+.wrap{
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 400px auto;
+  background-color: #E5E5E5;
+  height: 100vh;
+  
+}
+ 
+
+

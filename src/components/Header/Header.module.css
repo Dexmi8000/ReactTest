@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    background-color: #0050B3;
+    grid-area: 1/1/2/3;
+}
+
+.header__logo {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 25px 25px 0 25px;
+}
+
+.header__text {
+    color: azure;
+    font-size: 32px;
+    margin-top: 25px;
+}
