@@ -12,7 +12,7 @@ function Post(props) {
             <p className={`${dexstyle.post__description} ${dexstyle.post__text}`}>
                 {props.message}
             </p>
-            <p className={dexstyle.like}> like {props.like} </p>
+            <p className={dexstyle.like}> likes {props.like} </p>
         </div>
 
     )
