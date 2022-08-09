@@ -4,6 +4,7 @@ import Create_post from './Create_post/Create_post'
 
 function Main() {
     return (
+        
         <main className={dexstyle.main}>
             <div className={dexstyle.posts}>
                 <Create_post />

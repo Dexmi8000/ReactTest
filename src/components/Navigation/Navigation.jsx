@@ -9,11 +9,11 @@ function Nav() {
             <ul className={dexstyle.nav__items}>
                 <li className={dexstyle.nav__item}>
                     <img className={dexstyle.items__img} src={icon_profile} alt="" />
-                    <a className={dexstyle.nav__link} href="#">Profile</a>
+                    <a className={dexstyle.nav__link} href="/Main">Profile</a>
                 </li>
                 <li className={`${dexstyle.nav__item} ${dexstyle.active}`} >
                     <img className={dexstyle.items__img} src={icon_message} alt="" />
-                    <a className={`${dexstyle.nav__link} ${dexstyle.active}`} href="#">Messages</a>
+                    <a className={`${dexstyle.nav__link} ${dexstyle.active}`} href="/Messages">Messages</a>
                 </li>
                 <li className={dexstyle.nav__item}>
                     <img className={dexstyle.items__img} src={icon_news} alt="" />

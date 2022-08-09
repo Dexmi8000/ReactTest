@@ -1,24 +1,28 @@
-*{
+* {
   box-sizing: border-box;
 }
-a{
+
+a {
   text-decoration: none;
   color: #595959;
 }
-ul, li{
+
+ul,
+li {
   list-style: none;
 }
 
 
 
-.wrap{
+.wrap {
   display: grid;
   grid-template-rows: 100px auto;
   grid-template-columns: 400px auto;
   background-color: #E5E5E5;
   height: 100vh;
-  
 }
- 
 
-
+.content-wrapper {
+  grid-area: 2/2/3/3;
+  padding: 9px;
+}
