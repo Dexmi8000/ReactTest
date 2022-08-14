@@ -18,7 +18,7 @@ function Nav() {
                 </li>
                 <li className={dexstyle.nav__item}>
                     <img className={dexstyle.items__img} src={icon_news} alt="" />
-                    <a className={dexstyle.nav__link} href="#">News</a>
+                    <Link className={dexstyle.nav__link} to="/News">News</Link>
                 </li>
             </ul>
         </nav>
