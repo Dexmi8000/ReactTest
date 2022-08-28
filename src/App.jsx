@@ -1,10 +1,10 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Nav from './components/Navigation/Navigation';
-import Main from './components/Main/Main';
-import Messages from './components/Messages/Messages';
+import Main from './components/ContentFolder/Main/Main';
+import Messages from './components/ContentFolder/Messages/Messages';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import News from "./components/News/News"
+import News from "./components/ContentFolder/News/News"
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             <Routes>
               <Route path="/" element={<null />} />
               <Route path="/Main" element={<Main />} />
-              <Route path="/Messages" element={<Messages />} />
+              <Route path="/Messages/*" element={<Messages />} />
               <Route path="/News" element={<News />} />
             </Routes>
           </div>
