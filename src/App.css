@@ -18,12 +18,7 @@ li {
   display: grid;
   grid-template-rows: 100px auto;
   grid-template-columns: 400px auto;
-  background-color: #E5E5E5;
-  
+  background-color: #E5E5E5;  
   height: 100vh;
 }
 
-.content-wrapper {
-  grid-area: 2/2/3/3;
-  padding: 9px;
-}

@@ -1,10 +1,8 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Nav from './components/Navigation/Navigation';
-import Main from './components/ContentFolder/Main/Main';
-import Messages from './components/ContentFolder/Messages/Messages';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import News from "./components/ContentFolder/News/News"
+import Content from './components/Content/Content';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
@@ -14,15 +12,8 @@ function App() {
 
         <div className='wrap'>
           <Header />
-          <Nav />
-          <div className="content-wrapper">
-            <Routes>
-              <Route path="/" element={<null />} />
-              <Route path="/Main" element={<Main />} />
-              <Route path="/Messages/*" element={<Messages />} />
-              <Route path="/News" element={<News />} />
-            </Routes>
-          </div>
+          <Nav />          
+          <Content />            
         </div>
 
       </div>

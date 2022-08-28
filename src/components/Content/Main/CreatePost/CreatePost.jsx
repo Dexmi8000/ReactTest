@@ -1,7 +1,7 @@
-import dexstyle from './Create_post.module.css';
+import dexstyle from './CreatePost.module.css';
 import icon from './photo.png';
 
-function Create_post() {
+function CreatePost() {
     return (
 
         <div className={dexstyle.post}>
@@ -17,4 +17,4 @@ function Create_post() {
     )
 }
 
-export default Create_post;
+export default CreatePost;

@@ -8,6 +8,6 @@ function Header() {
             <p className={dexstyle.header__text}>Dexmi social</p>
         </header>
     )
-}
+};
 
 export default Header;
