@@ -1,19 +1,19 @@
-import dexstyle from './Messages.module.css';
+import dexstyle from './Dialogs.module.css';
 import { NavLink } from 'react-router-dom';
 
 
-function ContactsItem(props) {
+function Contacts(props) {
     return (
         <div className={dexstyle.contacts__item}>
             <NavLink className={ContactsLink => ContactsLink.isActive ? dexstyle.active : dexstyle.contacts__link}
-                to={"/Messages/" + props.id}>
+                to={"/Dialogs/" + props.id}>
                 {props.name}
             </NavLink>
         </div>
     )
 };
 
-function Message(props) {
+function Messages(props) {
     return (
         <div className="text">
             {props.message}
@@ -39,19 +39,19 @@ let MessagesData = [
 
 let contactsElements = ContactsData.map((contact) => {
     return (
-        <ContactsItem name={contact.name} id={contact.id} />
+        <Contacts name={contact.name} id={contact.id} />
     )
 });
 
 let MessagesElements = MessagesData.map((message) => {
     return (
-        <Message message={message.message} />
+        <Messages message={message.message} />
     )
 });
 
 
 
-function Messages() {
+function Dialogs() {
     return (
         <div className={dexstyle.messages}>
             <div className={dexstyle.message}>
@@ -65,7 +65,7 @@ function Messages() {
 }
 
 
-export default Messages;
+export default Dialogs;
 
 
 

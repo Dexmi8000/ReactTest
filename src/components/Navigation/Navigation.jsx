@@ -15,9 +15,9 @@ function Nav() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Messages" className={navLink => navLink.isActive ? dexstyle.active : dexstyle.nav__item} >
+                    <NavLink to="/Dialogs" className={navLink => navLink.isActive ? dexstyle.active : dexstyle.nav__item} >
                         <img className={dexstyle.items__img} src={icon_message} alt="" />
-                        Message
+                        Dialogs
                     </NavLink>
                 </li>
                 <li>

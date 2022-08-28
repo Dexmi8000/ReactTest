@@ -1,7 +1,7 @@
 import dexstyle from './Content.module.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Main from './Main/Main';
-import Messages from './Messages/Messages';
+import Dialogs from './Dialogs/Dialogs';
 import News from './News/News';
 
 function Content(props) {
@@ -10,7 +10,7 @@ function Content(props) {
             <Routes>
                 <Route path="/" element={<null />} />
                 <Route path="/Main" element={<Main />} />
-                <Route path="/Messages/*" element={<Messages />} />
+                <Route path="/Dialogs/*" element={<Dialogs />} />
                 <Route path="/News" element={<News />} />
             </Routes>
         </div>
