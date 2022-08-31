@@ -1,25 +1,6 @@
 import dexstyle from './Dialogs.module.css';
-import { NavLink } from 'react-router-dom';
-
-
-function Contacts(props) {
-    return (
-        <div className={dexstyle.contacts__item}>
-            <NavLink className={ContactsLink => ContactsLink.isActive ? dexstyle.active : dexstyle.contacts__link}
-                to={"/Dialogs/" + props.id}>
-                {props.name}
-            </NavLink>
-        </div>
-    )
-};
-
-function Messages(props) {
-    return (
-        <div className="text">
-            {props.message}
-        </div>
-    )
-};
+import Contacts from './Contacts/Contacts';
+import Messages from './Messages/Messages';
 
 let ContactsData = [
     { id: 1, name: 'Dima' },
@@ -30,11 +11,11 @@ let ContactsData = [
 ];
 
 let MessagesData = [
-    { id: 1, message: 'Hi, Dexmi!' },
-    { id: 2, message: 'Yes, its kruto!' },
-    { id: 3, message: 'Oky spoki, bro.' },
-    { id: 4, message: 'Oh, ola la!' },
-    { id: 5, message: 'Goood moorning!' }
+    { id: 1, messageText: 'Hi, Dexmi!' },
+    { id: 2, messageText: 'Yes, its kruto!' },
+    { id: 3, messageText: 'Oky spoki, bro.' },
+    { id: 4, messageText: 'Oh, ola la!' },
+    { id: 5, messageText: 'Goood moorning!' }
 ];
 
 let contactsElements = ContactsData.map((contact) => {
@@ -45,20 +26,18 @@ let contactsElements = ContactsData.map((contact) => {
 
 let MessagesElements = MessagesData.map((message) => {
     return (
-        <Messages message={message.message} />
+        <Messages message={message.messageText} />
     )
 });
-
-
 
 function Dialogs() {
     return (
         <div className={dexstyle.messages}>
             <div className={dexstyle.message}>
-                {MessagesElements}
+                {MessagesElements}      {/*переменная которая создает компоненту Massgaes с пропсами из базы */}
             </div>
             <div className={dexstyle.contacts}>
-                {contactsElements}
+                {contactsElements}      {/*переменная которая создает компоненту Contacts с пропсами из базы */}
             </div>
         </div >
     )
