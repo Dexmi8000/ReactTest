@@ -11,7 +11,7 @@ function Content(props) {
                 <Route path="/" element={<null />} />
                 <Route path="/Main" element={<Main />} />
                 <Route path="/Dialogs/*" element={<Dialogs />} />
-                <Route path="/News" element={<News />} />
+                <Route path="/News/*" element={<News />} />
             </Routes>
         </div>
 

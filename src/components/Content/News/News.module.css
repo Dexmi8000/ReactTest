@@ -1,3 +1,29 @@
 .news{
-    color: rgb(69, 42, 165);
+    display: flex;
+    gap: 10px;
+}
+.newsContent{
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    padding: 10px;
+}
+.newsTopics{
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    padding: 10px;
+}
+.newsTopic{
+    margin: 10px;
+    
+}
+.default{
+    padding: 2px 5px 2px 5px;
+}
+.active{
+    color: rgb(121, 0, 0);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
 }
