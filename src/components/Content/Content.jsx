@@ -8,20 +8,14 @@ import News from './News/News';
 
 function Content(props) {
 
-    let MessagesData = [
-        { id: 1, messageText: 'Hi, Dexmi!' },
-        { id: 2, messageText: 'Yes, its kruto!' },
-        { id: 3, messageText: 'Oky spoki, bro.' },
-        { id: 4, messageText: 'Oh, ola la!' },
-        { id: 5, messageText: 'Goood moorning!' }
-    ];
+   
 
     return (
         <div className={dexstyle.contentWrapper}>
             <Routes>
                 <Route path="/" element={<null />} />
-                <Route path="/Main" element={<Main />} />
-                <Route path="/Dialogs/*" element={<Dialogs  MessagesData={MessagesData}/>} />
+                <Route path="/Main" element={<Main MyPostsData={props.MyPostsData}/>} />
+                <Route path="/Dialogs/*" element={<Dialogs  MessagesData={props.MessagesData}/>} />
                 <Route path="/News/*" element={<News />} />
             </Routes>
         </div>

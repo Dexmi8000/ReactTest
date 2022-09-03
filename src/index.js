@@ -20,11 +20,24 @@ let contactsElements = ContactsData.map((contact) => {
   )
 });
 
+let MessagesData = [
+        { id: 1, messageText: 'Hi, Dexmi!' },
+        { id: 2, messageText: 'Yes, its kruto!' },
+        { id: 3, messageText: 'Oky spoki, bro.' },
+        { id: 4, messageText: 'Oh, ola la!' },
+        { id: 5, messageText: 'Goood moorning!' }
+    ];
+    
+let MyPostsData = [
+    {id: 1, name: 'Alex (My)', message: 'Hi, Dexmi!', like: '10'},
+    {id: 2, name: 'Alex (My)', message: 'Best of the best', like: '8'}
+]    
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <App />
+    <App MessagesData={MessagesData } MyPostsData={MyPostsData}/>
 
   </React.StrictMode>
 );

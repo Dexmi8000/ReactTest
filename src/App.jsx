@@ -5,7 +5,10 @@ import Content from './components/Content/Content';
 import { BrowserRouter } from 'react-router-dom';
 
 
-function App() {
+function App(props) {
+    
+    
+    
   return (
     <BrowserRouter>
       <div className="App">
@@ -13,7 +16,7 @@ function App() {
         <div className='wrap'>
           <Header />
           <Nav />          
-          <Content />            
+          <Content MessagesData={props.MessagesData} MyPostsData={props.MyPostsData}/>            
         </div>
 
       </div>
